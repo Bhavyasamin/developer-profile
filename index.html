@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav-wrap">
+  <nav class="nav">
+    <a href="#top" class="logo">alex<span>.dev</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO / ABOUT -->
+  <section class="hero" id="about">
+    <div class="hero-text">
+      <p class="eyebrow-free">Hi, I'm</p>
+      <h1>Alex Rivera</h1>
+      <p class="role">Front-End Developer building fast, accessible web apps.</p>
+      <p class="bio">
+       I'm a third-year Artificial Intelligence and Data Science student who likes
+turning rough ideas into working interfaces. Alongside ML and data-focused
+coursework, I've been teaching myself front-end development — HTML, CSS and
+JavaScript — because I like being able to see and interact with what I build,
+not just run it in a notebook. This page is one of the things I've built
+along the way.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-card" aria-hidden="true">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">about-me.js</span>
+        </div>
+        <pre class="terminal-body"><code><span class="tok-key">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">name</span>: <span class="tok-str">'Alex Rivera'</span>,
+  <span class="tok-prop">role</span>: <span class="tok-str">'Front-End Developer'</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">'HTML'</span>, <span class="tok-str">'CSS'</span>, <span class="tok-str">'JS'</span>],
+  <span class="tok-prop">learning</span>: <span class="tok-str">'React'</span>,
+  <span class="tok-prop">available</span>: <span class="tok-key">true</span>,
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <p class="section-lede">Tools and languages I use to get from idea to shipped page.</p>
+
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="tag-list">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Python</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks &amp; Libraries</h3>
+        <ul class="tag-list">
+          <li>React</li><li>Node.js</li><li>Express</li><li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul class="tag-list">
+          <li>Git &amp; GitHub</li><li>VS Code</li><li>Figma</li><li>Chrome DevTools</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <p class="section-lede">A few things I've built while learning.</p>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-thumb">01</div>
+        <div class="project-body">
+          <h3>Weather Now</h3>
+          <p>A small weather app that pulls live data from a public API and shows a 5-day forecast.</p>
+          <ul class="tag-list tag-list-sm">
+            <li>JavaScript</li><li>API</li><li>CSS Grid</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb">02</div>
+        <div class="project-body">
+          <h3>Task Board</h3>
+          <p>A drag-and-drop kanban board for organizing personal to-dos, saved in local storage.</p>
+          <ul class="tag-list tag-list-sm">
+            <li>React</li><li>Local Storage</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb">03</div>
+        <div class="project-body">
+          <h3>Recipe Finder</h3>
+          <p>Search recipes by ingredient and filter by diet type, built as a group project.</p>
+          <ul class="tag-list tag-list-sm">
+            <li>HTML</li><li>CSS</li><li>Fetch API</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source code</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Let's talk</h2>
+    <p class="section-lede">
+      Open to internships, collaborations and anything that helps me learn.
+      Reach me directly, or use the form.
+    </p>
+
+    <div class="contact-wrap">
+      <div class="contact-links">
+        <a href="mailto:alex.rivera@example.com">alex.rivera@example.com</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Say hello" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Built by Alex Rivera · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
